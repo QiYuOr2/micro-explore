@@ -1,0 +1,26 @@
+{
+  "name": "explore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "dev": "webpack serve",
+    "dev:app1": "webpack serve ./src/app1 --config ./src/app1/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "single-spa": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.2",
+    "html-webpack-plugin": "^5.3.1",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
