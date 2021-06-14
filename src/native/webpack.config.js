@@ -22,6 +22,5 @@ module.exports = {
     compress: true, // 是否压缩
     port: 3001, // 端口
     hot: true, // 热部署
-    open: true, // 打包完成后自动打开网页
   },
 };

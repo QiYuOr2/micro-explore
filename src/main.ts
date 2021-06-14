@@ -25,12 +25,21 @@ function loadApp(url: string, globalKey: string, source = '/bundle.js') {
 
 const appList: RegisterApplicationConfig[] = [
   {
-    name: 'app1',
-    app: loadApp('http://localhost:3001', 'app1'),
-    activeWhen: '',
+    name: 'native',
+    app: loadApp('http://localhost:3001', 'native'),
+    activeWhen: ['native', 'both'],
+  },
+  {
+    name: 'vue',
+    app: loadApp('http://localhost:3002', 'vue'),
+    activeWhen: ['vue', 'both'],
   },
 ];
 
 appList.forEach((item) => registerApplication(item));
 
 start();
+
+if (location.pathname === '/') {
+  location.pathname += 'native';
+}

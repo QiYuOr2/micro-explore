@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --mode=production",
     "dev": "webpack serve",
-    "dev:app1": "webpack serve ./src/app1 --config ./src/app1/webpack.config.js"
+    "dev:native": "webpack serve ./src/native --config ./src/native/webpack.config.js",
+    "dev:vue": "cd ./src/vue && pnpm serve"
   },
   "keywords": [],
   "author": "",

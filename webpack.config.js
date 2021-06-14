@@ -32,5 +32,6 @@ module.exports = {
     port: 3000, // 端口
     hot: true, // 热部署
     open: true, // 打包完成后自动打开网页
+    historyApiFallback: true
   },
 };
